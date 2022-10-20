@@ -1,0 +1,36 @@
+
+Q/  Adidas 
+
+https://www.adidas.com/us/adicolor-heritage-now-logo-vest/IB3431.html?forceSelSize=S
+
+
+Name ====
+
+document.querySelector('[data-testid="product-title"]').innerText
+
+document.querySelector('.name___120FN').innerText
+
+
+price ====
+document.querySelector('.product-price___2Mip5 , .gl-price-item notranslate').innerText.match(/\d+/gmi)[0]
+
+======If there is a price reduction======
+document.querySelector('.product-price___2Mip5 , .gl-price-item notranslate').innerText.match(/(\n.+\d+)/gmi)[0].replace(/(\n.)/gmi," ")
+
+
+img=======
+document.querySelectorAll('.content___2mR0x img')[0].src
+
+color=========
+document.querySelector('#available-colors-label').innerText
+document.querySelector('[data-auto-id="color-label"]').innerText
+
+
+size= ==========
+document.querySelector('[data-auto-id="bag-modal-product-size-mobile"]').innerText
+
+
+max quantity ==========
+document.querySelector('#available-colors-label').innerText
+
+
