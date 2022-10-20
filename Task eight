@@ -1,0 +1,20 @@
+Q/write program to define a string and by using regular expressions to extract the digits, letters, uppercase letters, special characters, email, url, phone number, date, ip address, white spaces, new line, html tag, price, weight, dimension, and arabic characters
+The Solution: 
+let st="Hell World I'am Alaa , I'am from Iraq. my age is 26 alaahameed@yahoo.com  https://www.theverge.com  07850244612 21/11/1995 192.168.0.1  \n hghghgh <html></html> 3000$  56kg 153cm  الاء حميد سهر "
+x= st.match(/\d+/gmi)[0]
+console.log(x);
+for(let i=0;i<st.length;i++)
+   {console.log(st.match(/[A-Z]+/g)[i]);}
+console.log(st.match(/[^A-Za-z0-9_\s]/gmi));
+console.log( st.match(/([a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9_-]+)/gi));
+console.log( st.match(/(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]/gi));
+console.log(st.match(/\d{3,20}/gmi));
+console.log(st.match(/(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}/gm));
+console.log(st.match(/(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)/gm));
+console.log(st.match(/\s+/gm));
+console.log(st.match(/\n+/gm));
+console.log(st.match(/<("[^"]*"['"]*|'[^']*'['"]*|[^'">])+>/gm));
+console.log(st.match(/\d+((,\d+)+)?(.\d+)?(,\d+)?[\$\€]/gm));
+console.log(st.match(/(\d*\.?\d+)\s*(lbs|kg)/gm));
+console.log(st.match(/(\d*\.?\d+)\s*(Meter|m|Centimetre|cm)/gm));
+console.log(st.match(/[\u0600-\u06FF\u0750-\u077F]/gm));
