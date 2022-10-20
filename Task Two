@@ -1,6 +1,0 @@
-Q/write a program to define and print these types of variables: number, string, and boolean .
-The solution : 
-
-
-let a={number:26, strin:"Alaa" ,bool : true }
-console.log(a);
