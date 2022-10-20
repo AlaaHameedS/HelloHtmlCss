@@ -1,0 +1,40 @@
+Zaful Brand 
+
+
+https://www.zaful.com/sheeny-draped-slip-cocktail-dress-puid_4873007.html?kuid=1070016
+
+Name ======
+document.querySelector('.js-goods-title').innerText.match(/.+ \-/gmi)[0].replace(/-/gmi,' ').trim()
+
+
+imge ======
+document.querySelector('#js-goodsGalleryShow img').src
+
+
+price =======
+document.querySelector('.price-info').innerText.match(/(\d+\.\d+)/gmi)[0]
+
+
+out of stock =======
+document.querySelector('.stock-tips-msg ').innerText
+
+
+
+size ======
+document.querySelector('.attr-txt ').innerText.match(/\w+\s\//gmi)[0].replace(/\//gmi," ").trim()
+
+
+color========
+document.querySelector('.js-goods-title').innerText.match(/\-.*/gmi)[0].replace(/-/gmi,' ').trim()
+document.querySelector('.attr-txt ').innerText.match(/\/\s\w+/gmi)[0].replace(/\//gmi," ").trim()
+
+
+
+weight======
+document.querySelector('.xxkkk20').innerText.match(/(Weight:)\s\d+\.\d+kg/gmi)[0].trim()
+
+Style ========
+document.querySelector('.xxkkk20').innerText.match(/(Style:).+(\n)/gmi)[0].replace(/\n/gmi," ").trim()
+
+dimension ========
+document.querySelector('#js-sizeTips').innerText
