@@ -1,0 +1,29 @@
+Q/- write program to define a string then change all letters to upper case, remove left and right white spaces, replace each letter A with Z, replace all digits with dollar sign, count the number of characters and create list for each word in the string
+
+The Soluion:
+
+let s="  the prodects of AMAZON are sutable prices like 10 dollare  ";
+
+// ==================upper case==================
+let result= s.toUpperCase();
+console.log(result);
+
+//=====================remove left and right white spaces==============
+let retrim=s.trim();
+console.log(retrim);
+
+//=============replace each letter A with Z===
+let replace=s.replace("A","Z");
+console.log(replace);
+//============ replace all digits with dollar sign====
+let direplace=s.replace(/\d.*\d/gm,"$");
+ console.log(direplace);
+//===========count the number of characters ===
+let countword=s.trim().length;
+ console.log(countword);
+
+
+//===========create list for each word in the string=========
+let spword=s.trim().split(" ");
+for(i in spword)
+   console.log(spword[i]);
