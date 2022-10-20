@@ -1,0 +1,35 @@
+Q/write program to defines two float numbers and find if the first number is positive then find the even/odd of the two numbers, if first number is negative then find the smallest/largest of two numbers
+
+The Solution :
+
+let firstNum =5.2 , secNum=4.7;
+  
+   if(firstNum >0)
+     {
+       let x=Math.round(firstNum);
+       let y=Math.round(secNum);
+        if(x%2==0&&y%2==0)
+          console.log("Both Numbers is Even");
+       else 
+          if(x%2==0&&y%2!=0)
+            console.log("First Number is Even and Second Number is Odd")
+       else
+          if(x%2!=0&&y%2==0)
+            console.log("First Number is Odd and Second Number is Even")
+       
+            else 
+               console.log("Both Numbers is Odd")
+     }
+
+ else 
+    if(firstNum<0)
+      {
+        if(firstNum>secNum)
+          console.log("First Number is largest and Second Number is smallest")
+        else
+          if(firstNum<secNum)
+              console.log("First Number is smallest and Second Number is largest")
+        else 
+               console.log("First Number  and Second Number is Equle")
+
+      }
