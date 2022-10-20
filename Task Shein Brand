@@ -36,7 +36,6 @@ document.querySelector('.goods-size').innerText.match(/(Waist Size:)(\d+\.\d+)/g
 document.querySelector('.goods-size').innerText.match(/(HipSize:)(\d+\.\d+)/gm)[0]
 
 
-document.querySelector('.goods-size').innerText.match(/(Shoulder:)(\d+\.\d+)(Length:)(\d+\.\d+)(Bust:)(\d+\.\d+)(Waist Size:)(\d+\.\d+)(HipSize:)(\d+\.\d+)/gm)
 
 Weight ==========
 document.querySelector('.review-item__member-text').innerText.match(/\d+\.\d.+/gm)[0]
