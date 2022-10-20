@@ -1,0 +1,9 @@
+Q/- write program to count from 77 to -36 and print values
+The Solution :
+
+let sum=0;
+for( let i = 77 ; i >= -36 ; i--) {
+    console.log(i)
+  sum++; 
+}
+console.log("count is "+sum)
