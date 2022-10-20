@@ -1,0 +1,74 @@
+Q/write program to define an array with 10 numbers then find the smallest, largest, sum of its elements, the index of the largest number, how many odd numbers, and sort in descending order
+
+The Solution:
+
+function araayminmax(arr )
+{
+    let mini = arr[0];
+    let maxi = arr[0];
+    let largestin =0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < mini) {
+            mini = arr[i];
+          
+        }
+        else if (arr[i] > maxi) {
+            maxi = arr[i];
+            largestin=i;
+           
+        }
+    }
+    let ans = {
+        "first":mini,
+        "second":maxi,
+         "index":largestin,
+    }
+    return ans;
+}
+ function SumAndOdd(arr)
+   
+  {
+    let sum=0,countOdd=0;
+    for(let i=0;i<arr.length;i++)
+    {   
+      sum+=arr[i]
+      if(arr[i]%2!=0)
+         countOdd++;     
+    }
+     let ans={"sum":sum ,
+               "odd":countOdd
+             }
+     return ans;
+    
+  }
+ function DeSort(arr)
+     {
+       
+        for (let i = 0; i < arr.length; i++) {     
+          for (let j = i+1; j < arr.length; j++) {     
+           if(arr[i] < arr[j]) {    
+               temp = arr[i];    
+               arr[i] = arr[j];    
+               arr[j] = temp; 
+           }
+          }
+        }
+       
+         for(let i=0;i<arr.length;i++)
+           console.log(arr[i]);
+     }
+    let arr = [ 44,76,89,32,54,66,22,90,30,76  ];
+     
+ 
+    
+    let ans = {};
+    let SumOdd={};
+    ans = araayminmax(arr);
+    SumOdd=SumAndOdd(arr);
+    console.log("Maximum is: " + ans.second);
+    console.log("Minimum is: " + ans.first);
+    console.log("Sum of  elements is: "+ SumOdd.sum);
+    console.log("The index of the largest number: "+ ans.index);
+    console.log("Count of  odd numbers : "+ SumOdd.odd);
+     DeSort(arr);
+     
