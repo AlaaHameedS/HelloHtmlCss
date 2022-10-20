@@ -1,0 +1,48 @@
+Q/Shein Brand 
+
+
+https://m.shein.com/us/SHEIN-Single-Breasted-Patch-Pocket-Cord-Overall-Dress-p-1658255-cat-1727.html?scici=women~~ON_SliderBanner,CN_shopbycategory,HZ_0,HI_0~~4_1_1~~real_1727~~~~0&mallCode=1&src_module=women&src_identifier=on%3DSliderBanner%60cn%3Dshopbycategory%60hz%3D0%60ps%3D4_1_1%60jc%3Dreal_1727&src_tab_page_id=page_home1666174731147
+
+Name ==========
+document.querySelector('.goods-name').innerText
+
+imge ==========
+document.querySelector('.swiper-wrapper > [data-index="0"] img').src
+ 
+
+price =======
+document.querySelector('.goods-price ').innerText.match(/\d+\.\d+/gmi)[0]
+
+
+size =======
+document.querySelector('[aria-label="XS"]').innerText.match(/\w+/gmi)[0]
+document.querySelector('.cart-item__editor-trueSize').innerText.match(/\s\w+/gmi)[0].trim()
+
+
+out of stock
+document.querySelector('[aria-label="XS"]').innerText.match(/\d+/gmi)[0]
+
+color =======
+
+document.querySelector('.goods-color__title').innerText
+
+
+dimension =======
+document.querySelector('.goods-size').innerText.match(/(Shoulder:)(\d+\.\d+)/gm)[0]
+document.querySelector('.goods-size').innerText.match(/(Length:)(\d+\.\d+)/gm)[0]
+document.querySelector('.goods-size').innerText.match(/(Bust:)(\d+\.\d+)/gm)[0]
+document.querySelector('.goods-size').innerText.match(/(Waist Size:)(\d+\.\d+)/gm)[0]
+document.querySelector('.goods-size').innerText.match(/(Waist Size:)(\d+\.\d+)/gm)[0]
+document.querySelector('.goods-size').innerText.match(/(HipSize:)(\d+\.\d+)/gm)[0]
+
+
+document.querySelector('.goods-size').innerText.match(/(Shoulder:)(\d+\.\d+)(Length:)(\d+\.\d+)(Bust:)(\d+\.\d+)(Waist Size:)(\d+\.\d+)(HipSize:)(\d+\.\d+)/gm)
+
+Weight ==========
+document.querySelector('.review-item__member-text').innerText.match(/\d+\.\d.+/gm)[0]
+
+
+
+ 
+
+
