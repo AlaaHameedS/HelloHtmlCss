@@ -1,0 +1,46 @@
+Q/write program to define a list of 5 objects to store brands (name, url, image link, products) each brand have 3 products with (name, url, image link, price, category), then  add new brand, add new product to second brand and print all values
+
+The Solution :
+
+let Brands=[ {name:"Amazon",url:"https://www.amazon.com/" , imge:"https://www.amazon.com/ref=nav_logo",products:[
+                                                                                                                {name:"Calvin Klein womens Solid              Sheath",url:"https://Calvin-Klein-Womens" , imge:"https://._AC_UY550_.jpg",price:89.98,cat:"Dresses"}, 
+                 {name:"Mighty Patch",url:"https:mighty-Patch-Hydrocolloid" , imge:"https://m.media_.jpg",price:15,cat:"Health & Personal"},{name:"BENGOO G9000 Stereo "          ,url:"/www.amazon.com/BENGOO-G9000" , imge:"https://m.media-amazon.jpg",price:12,cat:"Gaming accessories"}]},
+            
+              {name:"BestBuy",url:"https://www.bestbuy.com/" , imge:"https://www.bestbuy.ca/",products:[ {name:"French Door Refrigerator",url:"://www.bestbuy.ca", imge:"https://multimedia..jpg",price:3.49999,cat:"Major Appliance"}, {name:"Remote Control",url:"ttps://www.bestbuy.ca/en" , imge:"https://multimedia.jpg",price:74,cat:"Toys"},{name:"CHIVolumizer " ,url:"https://www.bestbuy.com/site" , imge:"https://pisbbystatic.com/image",price:65.99,cat:"hair care "}]} , 
+           {name:"eBay",url:"https://www.ebay.com/" , imge:"https://ir.ebaystatic.png",products:[
+                                                                                                                {name:"SPECIAL PRICE!",url:"https://www.ebay.com/itm" , imge:"https://i.ebayimg.com/images.jpg",price:177.98,cat:"Art"}, 
+                 {name:"Unheated Blue",url:"https://www.ebay.com/itm/" , imge:"https://i.ebayimg.com/images.jpg",price:89,cat:"Fine Jewelry"},{name:"PUMA Women's "          ,url:"https://www.ebay.com/itm/" , imge:"https://images.puma.net/images.jpg",price:29.99,cat:"Clothes"}]} , 
+            {name:"iHerb",url:"https://www.iherb.com/" , imge:"https://cloudinary.images-iherb.com/image.jpg",products:[
+                                                                                                                {name:"Optimum Nutrition",url:"https://www.iherb.com/pr/optimum-nutrition" , imge:"https://cloudinary.images-iherb.com/image/",price:89,cat:"DERMA"}, 
+                 {name:"21st Century",url:"https://www.iherb.com/pr/21s" , imge:"https://cloudinary.images-iherb.com/image.jpg",price:7,cat:"Suppliment"},{name:"PureFine"          ,url:"https://www.iherb.com/pr/purefine" , imge:"https://cloudinary.images-iherb.com/image/.jpg",price:2,cat:"Disinfectant Wipes"}]},
+            {name:"walmart",url:"https://shopping.myus.com/walmart" , imge:"https://static.nc-myus.com/images.svg",products:[
+                                                                                                                {name:"Wrangler Men's",url:"https://shopping.myus.com/productpage" , imge:"https://static.nc-myus.com/images.png",price:18.98 ,cat:"men jeans"}, 
+                 {name:"Beetlejuice Revolution",url:"https://shopping.myus.com/" , imge:"https://static.nc-myus.com/images/.png",price:7.98 ,cat:"MakeUp"},{name:"Celeron 4GB" ,url:"https://shopping.myus.com/productpage" , imge:"https://static.nc-myus.com/images/.png",price:169.00,cat:"Laptops"}]}
+           
+           ];
+
+
+Brands.push({name:"Alibaba",url:"https://www.alibaba.com/" , imge:"https://www.alibaba.com/?spm=a27aq",products:[
+                                                                                                                {name:"Private Label Organic",url:"https://www.alibaba.com/product" , imge:"https://s.alicdn.com/.png",price:11.674,cat:"Beauty"}, 
+                 {name:"Original brand gift",url:"https://www.alibaba.com/product" , imge:"https://s.alicdn.com/.jpg",price:3.911,cat:"Weman buteay "},{name:"Thick End  ",url:"/www.amazon.com/BENGOO-G9000" , imge:"https://m.media-amazon.jpg",price:12,cat:" accessories"}]});
+
+
+Brands[1].products.push({name:"New Prodect",url:"https://New Prodect",imge:"https://New Prodect.jpg",price:100,cat:"New cat"});
+
+for(let i=0;i<Brands.length;i++)
+   {
+      console.log("==================================== "+Brands[i].name+"================================");
+     console.log("The Name of Brnad is: "+Brands[i].name);
+     console.log("The url of Brnad is: "+Brands[i].url);
+     console.log("The imge of Brnad is: "+Brands[i].imge);
+      for(let j=0;j<Brands[i].products.length;j++)
+        {
+           console.log("The Name of Prodacts is: "+Brands[i].products[j].name);
+          console.log("The url of Prodacts is: "+Brands[i].products[j].url);
+          console.log("The imge of Prodacts is: "+Brands[i].products[j].imge);
+          console.log("The price of Prodacts is: "+Brands[i].products[j].price);
+          console.log("The category of Prodacts is: "+Brands[i].products[j].cat);
+        }
+     
+     console.log("--------------------------------------------------------------------");
+   }
